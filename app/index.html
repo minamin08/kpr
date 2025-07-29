@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator KPR</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  
+   <header class="header">
+            <a href="#" class="header__logo">Koppontren Al Hidayaat</a>
+
+            <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+
+                    <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+    
+                    <div class="nav__perfil">
+                        <div class="nav__img">
+                            <img src="https://cdn.glitch.global/c0810e34-1bcc-485e-ae87-268c2a1e8f15/logo.png?v=1742442647411" alt="">
+                        </div>
+                        
+                        <div>
+                            <a href="#" class="nav__name">Koppontren Al Hidayaat</a>
+                            <span class="nav__profesion">Web designer</span>
+                        </div>
+                    </div>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Simpanan</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Pembiayaan</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Kalkulator KPR</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="nav__social">
+                        <a href="#" class="nav__social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#" class="nav__social-icon"><ion-icon name="logo-youtube"></ion-icon></a>
+                        <a href="#" class="nav__social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+ <div class="container2">   
+   <div id="cal" class="calculator">
+  <h2>Kalkulator KPR</h2>
+  <div>
+    <label for="jumlah_pinjaman">Jumlah Pinjaman (juta Rp):</label>
+    <input type="number" id="jumlah_pinjaman" placeholder="Misal: 100">
+  </div>
+  <div>
+    <label for="tenor">Tenor Pinjaman (bulan):</label>
+    <input type="number" id="tenor" placeholder="Misal: 12 Bulan">
+  </div>
+  <button onclick="hitungKPR()">Hitung</button>
+  <p id="result"></p>
+</div>
+  </div>
+  
+<script>
+
+</script>
+        
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script src="script.js"></script>
+  
+</body>
+</html>
