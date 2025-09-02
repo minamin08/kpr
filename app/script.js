@@ -2,24 +2,7 @@
 const navMenu = document.getElementById('nav-menu'),
       toggleMenu = document.getElementById('nav-toggle'),
       closeMenu = document.getElementById('nav-close')
- navLink = document.querySelectorAll('.nav__link');
-
-// Tampilkan menu saat klik toggle
-if (toggleMenu) {
-  toggleMenu.addEventListener('click', () => {
-    navMenu.classList.add('show');
-  });
-}
-
-// Sembunyikan menu saat klik close
-if (closeMenu) {
-  closeMenu.addEventListener('click', () => {
-    navMenu.classList.remove('show');
-  });
-}
-
-
-
+ 
 function linkAction(){
   /*Active link*/
   navLink.forEach(n => n.classList.remove('active'));
