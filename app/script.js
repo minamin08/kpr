@@ -1,29 +1,20 @@
-/*  java Script */
+/*===== MENU SHOW Y HIDDEN =====*/ 
 const navMenu = document.getElementById('nav-menu'),
       toggleMenu = document.getElementById('nav-toggle'),
       closeMenu = document.getElementById('nav-close')
-/*===== MENU SHOW =====*/ 
-if(toggleMenu){
-    toggleMenu.addEventListener('click', ()=>{
-        navMenu.classList.add('show')
-    })
-}
 
-/*===== MENU HIDDEN =====*/
-if(closeMenu){
-    closeMenu.addEventListener('click', ()=>{
-        navMenu.classList.remove('show')
-    })
-}
+/*SHOW*/ 
+toggleMenu.addEventListener('click', ()=>{
+    navMenu.classList.toggle('show')
+})
 
-/*===== REMOVE MENU MOBILE =====*/
-const navLink = document.querySelectorAll('.nav__link')
-
-function linkAction(){
+/*HIDDEN*/
+closeMenu.addEventListener('click', ()=>{
     navMenu.classList.remove('show')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
+})
 
+/*===== ACTIVE AND REMOVE MENU =====*/
+const navLink = document.querySelectorAll('.nav__link');   
 
 function linkAction(){
   /*Active link*/
@@ -34,6 +25,7 @@ function linkAction(){
   navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+/*===== fungsi hitung KPR =====*/
 function hitungKPR() {
   var jumlah_pinjaman = parseFloat(document.getElementById("jumlah_pinjaman").value);
   var suku_bunga_tahunan = 1.5; // Menggunakan suku bunga tetap (contoh 8%)
